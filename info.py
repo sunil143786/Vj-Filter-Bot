@@ -29,7 +29,7 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001813916568'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-100205512705657 -1002101778109').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001948376752 -1002055127272').split()]  # For Multiple Id Use One Space Between Each.
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
@@ -37,11 +37,11 @@ REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set Tr
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # This Is Force Subscribe Channel, also known as Auth Channel 
-auth_channel = environ.get('AUTH_CHANNEL', '-1002655143298') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002320725497') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # This Channel Is For When User Request Any File Name With command or hashtag like - /request or #request
-reqst_channel = environ.get('REQST_CHANNEL', '-1002724817171')
+reqst_channel = environ.get('REQST_CHANNEL', '-1001813916568')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 
 # This Channel Is For Index Request 
@@ -88,10 +88,10 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/vj_bot_disscussion')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/vj_botz')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'vj_bot_disscussion') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/kingvj01')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+aMJvSeQ9NaEzMmY1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+aMJvSeQ9NaEzMmY1')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+aMJvSeQ9NaEzMmY1') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Manager_143Bot')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -112,10 +112,10 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 
 # Token Verification Info :
-VERIFY = bool(environ.get('VERIFY', False))
-VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', '')
-VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
+VERIFY = bool(environ.get('VERIFY', True))
+VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'softurl.in')
+VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '5c27438b53669d585a76abe0a737c202f3472fba')
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/Jaynath_Backup_Channel/134')
 
 # If You Fill Second Shortner Then Bot Attach Both First And Second Shortner And Use It For Verify.
 VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
@@ -170,7 +170,7 @@ URL = environ.get("URL", "https://testofvjfilter-1fa60b1b8498.herokuapp.com/")
 
 
 # Rename Info : If True Then Bot Rename File Else Not
-RENAME_MODE = bool(environ.get('RENAME_MODE', False)) # Set True or False
+RENAME_MODE = bool(environ.get('RENAME_MODE', True)) # Set True or False
 
 
 # Auto Approve Info : If True Then Bot Approve New Upcoming Join Request Else Not
